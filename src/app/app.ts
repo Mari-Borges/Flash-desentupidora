@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, HostListener, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 interface FlashConfig {
@@ -36,4 +36,14 @@ export class App {
       'Vinhais', 'Angelim',
     ],
   });
+
+  isMenuOpen = signal<boolean>(false);
+
+  toggleMenu(): void {
+    this.isMenuOpen.update(state => !state);
+  }
+
+  closeMenu(): void {
+    this.isMenuOpen.set(false);
+  }
 }
