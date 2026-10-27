@@ -37,7 +37,7 @@ img { max-width: 100%; }
   display: flex; min-height: 36px; align-items: center; justify-content: space-between;
   font-size: 11px; font-weight: 500;
 }
-.topbar-item { display: flex; align-items: center; gap: 8px; }
+.topbar-item { display: flex; align-items: center; gap: 8px !important; }
 
 /* ---------- Cabeçalho ---------- */
 .header {
@@ -51,7 +51,8 @@ img { max-width: 100%; }
 .brand-tag {
   display: none;
   border-left: 1px solid #2f4a55; padding-left: 12px;
-  font-size: 10px; font-weight: 700; line-height: 16px; letter-spacing: 2px;
+  font-size: 10px; font-weight: 700; line-height: 16px; letter-spacing: 2px; 
+  
 }
 @media (min-width: 640px) { .brand-tag { display: block; } }
 
